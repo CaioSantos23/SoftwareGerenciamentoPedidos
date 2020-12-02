@@ -1,0 +1,22 @@
+﻿<Window x:Class="TCC.ControleCaixa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TCC"
+         mc:Ignorable="d" Height="396.528" Width="554.611" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
+
+    <Grid>
+        <Label Background="#FF31577E" FontWeight="Bold"  FontFamily="TIMES NEW ROMAN" FontSize="21" Foreground="White" HorizontalAlignment="Center" Margin="0,-1,0,340" VerticalAlignment="Center" Height="58" Width="555"/>
+        <Label Content="ADICIONAR ENTRADA" FontWeight="Bold"  FontFamily="TIMES NEW ROMAN" FontSize="21" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="44" Width="240" Margin="153,13,162,340"/>
+        <Rectangle Fill="WhiteSmoke"  HorizontalAlignment="Left" Height="215" Margin="53,98,0,0" Stroke="white" VerticalAlignment="Top" Width="448"/>
+        <TextBox x:Name="tvalor" HorizontalAlignment="Left" Background="White" Height="34" Margin="196,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150" />
+        <Label x:Name="txtuf_Copy" Content="VALOR" FontSize="15" HorizontalAlignment="Left" FontFamily="times new roman" Margin="133,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.263,0" Height="34" Width="58"/>
+        <TextBox x:Name="tobs" HorizontalAlignment="Left" Background="White" Height="34" Margin="196,207,0,0" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" VerticalAlignment="Top" Width="246" />
+        <TextBox x:Name="tdata" HorizontalAlignment="Left" Background="White" Height="34" Margin="196,187,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150" Initialized="Tdata_Initialized" Visibility="Collapsed" />
+        <Label x:Name="txtuf_Copy2" Content="OBSERVAÇÃO" FontSize="15" HorizontalAlignment="Left" FontFamily="times new roman" Margin="84,207,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.263,0" Height="34" Width="107"/>
+        <Button  Content="CADASTRAR" FontSize="17" HorizontalAlignment="Left" Margin="133,330,0,0" VerticalAlignment="Top" Width="132" Height="44" Background="Green" Click="btCadastrar_Click"/>
+        <Button  Content="CANCELAR" FontSize="17"  HorizontalAlignment="Left" Margin="299,330,0,0" VerticalAlignment="Top" Width="132" Height="44" Background="Red" Click="btCancelar_Click"/>
+
+    </Grid>
+</Window>
